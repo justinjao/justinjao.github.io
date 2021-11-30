@@ -7,14 +7,14 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 3.9" # changed because of monophase dependency
+# gem "jekyll", "~> 3.9" # changed because of monophase dependency
 
 # removed a default gem theme because I'm using Monophase as a regular theme,
 # as per instructions here: https://jekyllrb.com/docs/themes/#converting-gem-based-themes-to-regular-themes
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
-# gem "github-pages", group: :jekyll_plugins
+gem "github-pages", "~> 219", group: :jekyll_plugins
 
 
 # added monophase dependencies (found here: https://github.com/zivhub/monophase/blob/main/monophase.gemspec)
