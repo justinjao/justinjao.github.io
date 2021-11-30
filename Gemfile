@@ -26,6 +26,8 @@ gem "kramdown-parser-gfm", "~> 1.1"
 # also added jekyll sitemap, because why not?
 gem "jekyll-sitemap"
 
+gem "jemoji", "~> 0.12.0"
+
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
