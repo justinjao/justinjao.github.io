@@ -1,3 +1,23 @@
 ---
 ---
 @import "main";
+
+// note for future reference: the original monophase had 
+// the styles.scss in the assets folder in a "monophase" subdirectory,
+// as well as the main.scss and all the _*.scss files in the _sass in 
+// a "monophase subdirectory". For whatever reason, building this locally
+// showed whatever edits I made to the CSS files fine, but whenever I deployed
+// to gh-pages, it would somehow get overriden. After consulting for like an
+// hour with the Jekyll docs on assets, relative URLs, and SO posts which I 
+// can somehow no longer rediscover, I decided to try moving the files out of
+// these subdirectories. Miraculously, it worked. Still not 100% sure, but my
+// best guess is that somehow, the relative URLs were getting screwed up
+// when gh-pages deployed it, and it wasn't reading the proper css file,
+// and was somehow reading the default styles.css file within the css directory
+// (also, where the heck did THAT css file come from??? I have no idea.
+// Seems like it's the correct default for monophase, but can't find out
+// what's generating it), and moving it back out to the the root assets and _sass
+// directories resolved the URLs properly. Or maybe gh-pages isn't smart enough to
+// read deeper than the base directories? I dunno...either way, 
+// it fixed itself for now, and it's too late for me to try and figure it out.
+// Ah well. At least I learned how the stylesheets were loaded into the HTML.
