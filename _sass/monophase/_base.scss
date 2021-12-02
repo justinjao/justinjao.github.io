@@ -121,3 +121,10 @@ abbr {
     border-bottom: 1px dotted var(--border-color);
   }
 }
+
+img.emoji {
+  display: inline;
+  // height: 1em;
+  // width: 1em;
+  margin-bottom: 0em;
+}
