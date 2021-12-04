@@ -4,9 +4,9 @@ layout: default
 
 <div class="posts">
   {% assign posts = site.posts %}
-  {% if paginator %}
+  <!-- {% if paginator %}
     {% assign posts = paginator.posts %}
-  {% endif %}
+  {% endif %} -->
   {% for post in posts %}
     <div class="post">
       <h2 class="post-title">
@@ -17,18 +17,18 @@ layout: default
 
       <time datetime="{{ post.date | date_to_xmlschema }}" class="post-meta">{{ post.date | date_to_string }}</time>
 
-      <p class="post-excerpt">
+      <!-- <p class="post-excerpt">
         {% if post.description %}
           {{ post.description | strip_html }}
         {% else %}
           {{ post.excerpt | strip_html }}
-        {% endif %}
-      </p>
+        {% endif %} -->
+      <!-- </p> -->
     </div>
   {% endfor %}
 </div>
 
-{% if paginator %}
+<!-- {% if paginator %}
   <div class="pagination">
     {% if paginator.next_page %}
       <a class="pagination-item older" href="{{ paginator.next_page_path | relative_url }}">Older</a>
@@ -41,4 +41,4 @@ layout: default
       <span class="pagination-item newer">Newer</span>
     {% endif %}
   </div>
-{% endif %}
+{% endif %} -->
