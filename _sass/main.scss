@@ -2,7 +2,21 @@
 @import "base";
 @import "layout";
 
+html, html[data-theme="light"] {
+@import "highlight-light";
+}
+
+html[data-theme="dark"] {
+ @import "highlight-dark";
+}
+
 @import "highlight-light";
 @media (prefers-color-scheme: dark) {
-  @import "highlight-dark";
+  html[data-theme="dark"] {
+    @import "highlight-dark";
+   }
+
+  html, html[data-theme="light"] {
+  @import "highlight-light";
+  }   
 }

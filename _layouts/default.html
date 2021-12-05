@@ -4,7 +4,7 @@
   <body>
     <div class="container">
       {% include header.html %}
-
+      <button id="theme-toggle" onclick="modeSwitcher()"></button>
       <main>
         {{ content }}
       </main>
@@ -19,5 +19,6 @@
     {% if jekyll.environment == 'production' and site.google_analytics %}
       {% include google-analytics.html %}
     {% endif %}
+    <script src="/mode-switcher.js"></script>
   </body>
 </html>
