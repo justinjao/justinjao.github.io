@@ -26,6 +26,9 @@
   {% if site.data.social %}
     <div class="footer-column">
       <ul class="social-icons">
+        <a id="theme-toggle" onclick="modeSwitcher()" style="cursor:pointer">
+          <i class="fas fa-adjust"></i>
+        </a>
         {% for social in site.data.social %}
           <li class="social-icon-item">
             <a class="social-icon" href="{{ social.url }}" target="_blank">
