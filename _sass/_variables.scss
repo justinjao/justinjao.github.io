@@ -3,6 +3,12 @@ $md-screen: 48rem;
 $lg-screen: 64rem;
 $xl-screen: 80rem;
 
+
+// root sets the default values, so by default whatever is set here is displayed no 
+// matter what, unless overriden by the html[data-theme] rules below
+// now, because of the fact that when a user first visits the site in a new session,
+// the data-theme html element is not set, it will show whatever the default root is
+//
 :root {
   --spacer: 1rem;
   --spacer-2: calc(var(--spacer) * 2);
@@ -19,7 +25,7 @@ $xl-screen: 80rem;
   --code-font-family: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   /**
-   * Color
+   * sets default colour for light theme
    */
   --body-bg-color: var(--oc-white);
   --body-color: var(--oc-gray-9);
@@ -62,31 +68,31 @@ html, html[data-theme="light"] {
     --danger-color: var(--oc-red-1);
   }
   
-// @media (prefers-color-scheme: dark) {
-//   :root {
-//     /**
-//      * Color
-//      */
-//     --body-bg-color: var(--oc-gray-9);
-//     --body-color: var(--oc-gray-4);
-//     --code-bg-color: var(--oc-gray-7);
-//     --heading-color: var(--oc-white);
-//     --border-color: var(--oc-gray-7);
-//     --link-color: var(--oc-yellow-5);
-//     --link-color-rgb: var(--oc-yellow-5-rgb);
-//     --link-hover-color: var(--oc-blue-3);
-//     --info-color: var(--oc-green-1);
-//     --warning-color: var(--oc-yellow-1);
-//     --danger-color: var(--oc-red-1);
-//   }
-// }
 
 @media (prefers-color-scheme: dark) {
-  html[data-theme="dark"] {
-    @import "highlight-dark";
-   }
 
-  html, html[data-theme="light"] {
-  @import "highlight-light";
-  }
+  :root {
+        /**
+         * sets default colour for dark theme
+         */
+        --body-bg-color: var(--oc-gray-9);
+        --body-color: var(--oc-gray-4);
+        --code-bg-color: var(--oc-gray-7);
+        --heading-color: var(--oc-white);
+        --border-color: var(--oc-gray-7);
+        --link-color: var(--oc-yellow-5);
+        --link-color-rgb: var(--oc-yellow-5-rgb);
+        --link-hover-color: var(--oc-blue-3);
+        --info-color: var(--oc-green-1);
+        --warning-color: var(--oc-yellow-1);
+        --danger-color: var(--oc-red-1);
+      }
+// removed because unecessary
+  // html, html[data-theme="dark"] {
+  //   @import "highlight-dark";
+  //  }
+
+  // html[data-theme="light"] {
+  // @import "highlight-light";
+  // }
 }

@@ -7,16 +7,24 @@ html, html[data-theme="light"] {
 }
 
 html[data-theme="dark"] {
- @import "highlight-dark";
+@import "highlight-dark";
 }
 
 @import "highlight-light";
 @media (prefers-color-scheme: dark) {
-  html[data-theme="dark"] {
+  :root {
     @import "highlight-dark";
-   }
+  }
 
-  html, html[data-theme="light"] {
-  @import "highlight-light";
-  }   
+// removed because unecessary
+  // html[data-theme="dark"] {
+  //   @import "highlight-dark";
+  //  }
+
+  // html, html[data-theme="light"] {
+  // @import "highlight-light";
+  // }   
 }
+
+// note: I based my dark theme off of this template, and modded it to work
+// with the monophase theme: https://derekkedziora.com/blog/dark-mode-revisited
