@@ -3,7 +3,7 @@ title: My Experience A Month Into Co-op
 layout: post
 categories: [Coop Experiences]
 tags: [coop, software, thoughts]
-date: 2021-02-21
+date: 2022-02-21
 ---
 
 *I wrote the bulk of this post back in October, but left some sections blank to fill in later. Apart from the descriptions of what I did, I feel like a lot of my thoughts and opinions expressed here are more nuanced now than they were when I truly started back a few months ago. But again, I'm choosing to leave them mostly preserved.*

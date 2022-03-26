@@ -3,7 +3,7 @@ title: Tip Of The Iceberg
 layout: post
 categories: [Coop Experiences]
 tags: [coop, software, thoughts]
-date: 2021-02-19
+date: 2022-02-19
 ---
 
 *Note: I started writing down some of my thoughts near the beginning of my co-op, before I got my blog setup. As such, the true date of the first few posts are going to be a bit off. I wrote this particular one around the first 3 weeks of my co-op, back in September. Already, it feels a bit premature, but for the sake of capturing the spirit of what I wrote, apart from some cleanup and re-organizing (and filling in empty bullet points about what I thought I was writing about), I'm leaving them mostly untouched.*
