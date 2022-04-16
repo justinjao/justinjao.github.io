@@ -1,7 +1,7 @@
 ---
 title: My Experience A Month Into Co-op
 layout: post
-categories: [Coop Experiences]
+categories: [Co-op]
 tags: [coop, software, thoughts]
 date: 2022-02-21
 ---

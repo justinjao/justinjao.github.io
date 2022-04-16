@@ -1,8 +1,8 @@
 ---
 title: Tip Of The Iceberg
 layout: post
-categories: [Coop Experiences]
-tags: [coop, software, thoughts]
+categories: [Co-op]
+tags: [co-op, software, thoughts]
 date: 2022-02-19
 ---
 
