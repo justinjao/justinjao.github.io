@@ -1,7 +1,7 @@
 ---
 title: How I Wished I Was Here
 layout: post
-categories: [Life and Career]
+categories: [Life-and-Career]
 tags: [life, career, thoughts]
 date: 2022-03-25
 ---

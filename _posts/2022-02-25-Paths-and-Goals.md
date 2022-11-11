@@ -1,7 +1,7 @@
 ---
 title: Paths and Goals
 layout: post
-categories: [Life and Career]
+categories: [Life-and-Career]
 tags: [life, career, thoughts]
 date: 2022-02-25
 ---
