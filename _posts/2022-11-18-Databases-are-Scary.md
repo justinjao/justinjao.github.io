@@ -8,7 +8,7 @@ date: 2022-11-18 23:22:00 -0800
 
 -----
 
-**Another one from the backlog, with some small touchups and add-ons. This one's originally dated Ocotober 16th (1am, so technically October 15th). Interestingly, I wrote this roughly a week after I drafted up my first post on (my first impressions of my co-op)[https://justinjao.github.io/co-op/My-Experience-A-Month-Into-Coop.html] So pretty much right after I talked about how the incident slack channel was all currently popcorn viewing for me. I also called the fact that this would probably change fairly quickly. I don't think I expected my perspective to change that quickly though!**
+*Another one from the backlog, with some small touchups and add-ons. This one's originally dated Ocotober 16th, 2021 (1am, so technically October 15th). Interestingly, I wrote this roughly a week after I drafted up my  post on [my first impressions of my co-op](https://justinjao.github.io/co-op/My-Experience-A-Month-Into-Coop.html). So pretty much right after I talked about how the incident slack channel was all currently popcorn viewing for me. I also called the fact that this would probably change for me fairly quickly. I don't think I expected my perspective to change that quickly though!*
 
 -----
 
@@ -21,7 +21,7 @@ You know those horror stories you hear on reddit about the intern deleting the p
 that flashed through my mind. My team and I even joked about the fact that I was similarly touching a prod DB (I'm about a month and a half in,
 and I wasn't really doing something that important and breaking as deleting a whole DB, so it wasn't quite the same thing, but still).
 And we talked about how Salseforce had a similar incident, and blamed their intern for deleting the DB, but that was on them for allowing an
-intern that sort of access. And that's when it hit me, that I was touching a prod DB. 
+intern that sort of access. And that's when it hit me, that I was touching a prod DB.
 
 "Oh, hardiharhar, I could delete the entire DB too."
 
@@ -35,7 +35,7 @@ because one of our biggest clients was facing errors with their integration of o
 
 Yikes.
 
-At this point, I was sitting in the office zoom room with my coworkers (who were helping me move the data). I was still wrapping up my task related to the db, so I asked my senior dev if I should stop what I was doing, and he quickly confirmed with a small smile that wasn't quite filled with laughter, but definitely showed that he was clearly aware of the irony of the situation. I immediately dropped what I was doing, and what followed was about 10 minutes of me waiting around while the rest of my team looked over the logs (filled with errors I couldn't really parse) to find out what was going wrong.
+At this point, I was sitting in the [office zoom room](https://justinjao.github.io/co-op/On-Working-In-Person.html) with my coworkers (who were helping me move the data). I was still wrapping up my task related to the db, so I asked my senior dev if I should stop what I was doing, and he quickly confirmed with a small smile that wasn't quite filled with laughter, but definitely showed that he was clearly aware of the irony of the situation. I immediately dropped what I was doing, and what followed was about 10 minutes of me waiting around while the rest of my team looked over the logs (filled with errors I couldn't really parse) to find out what was going wrong.
 
 The whole time, I was trying to avoid spiralling, and kept thinking to myself in disbelief, "this can't be my fault, right?" All I was doing was moving some data over from one db to another. And I wasn't even moving the affected company's data (in fact, I was only moving 1 customer's data). But maybe I somehow accidentally deleted the wrong table?
 
@@ -47,12 +47,12 @@ But damn, that was terrifying. Up until now, the service disruption channel has 
 
 But yeah, anyways. That was my brush with databases. It's one thing to make a front-end change that creates a UI that users don't like. Oof, that looks off. Oh well, we'll fix it soon. To incorrectly handle business logic in the front/back-end and lead to errors in the service - ESPECIALLY on authentication, which affects everyone? Ouch, users can't access our applications. Service is down temporarily.  But potentially deleting customer data in a prod environment?
 
-Holy crap. 
+Holy crap.
 
 My blood ran cold for a second there.
 
 Way less quality assurance checks before your change goes out, with less change management. And the notion of potentially losing customer data, PERMANENTLY? Sure, I know DBs can be rolled back, but to consider the alternative is bone-chilling to the core.
 
-Databases are serious business. And when mishandled, databases can be real scary. 
+Databases are serious business. And when mishandled, databases can be real scary.
 
 Consider me humbled. I don't think I'll be underestimating databases anytime soon. Hopefully, never again, even.
