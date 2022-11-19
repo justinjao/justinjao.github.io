@@ -1,4 +1,10 @@
-# Databases are Scary
+---
+title: Databases Are Scary
+layout: post
+categories: [Co-op]
+tags: [co-op]
+date: 2022-11-18 23:22:00 -0800
+---
 
 -----
 
